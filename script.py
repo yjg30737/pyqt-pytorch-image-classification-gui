@@ -52,8 +52,8 @@ class ImagePredictor:
         img_width = 180
         transform = transforms.Compose([
             transforms.Lambda(lambda img: img.convert('RGB')),
-            transforms.Resize((img_height, img_width)),  # 이미지 크기 조정
-            transforms.ToTensor()  # PIL 이미지를 텐서로 변환
+            transforms.Resize((img_height, img_width)),
+            transforms.ToTensor()
         ])
         return transform
 
@@ -68,7 +68,7 @@ class ImagePredictor:
 
     def predict_image(self, image):
         image = self.transform(image)
-        image = image.unsqueeze(0)  # 배치 차원 추가
+        image = image.unsqueeze(0)
         image = image.to(self.device)
         #
         output = self.model(image)
