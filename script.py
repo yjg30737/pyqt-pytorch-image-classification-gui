@@ -44,7 +44,7 @@ class ImagePredictor:
 
     def load_model(self, model_path):
         model = Net(len(classes)).to(self.device)
-        model.load_state_dict(torch.load(model_path))
+        model.load_state_dict(torch.load(model_path, map_location=self.device))
         return model
 
     def load_transform(self):
