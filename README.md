@@ -4,6 +4,7 @@
   
   [![](https://dcbadge.vercel.app/api/server/cHekprskVE)](https://discord.gg/cHekprskVE)
 </div>
+
 PyQt5 usecase of pytorch image classification
 
 This is the showcase of using a simple model that distinguishes between five types of flowers <b>(tulips, dandelions, sunflowers, daisies, and roses)</b> and presented result in a PyQt5 GUI.
