@@ -23,9 +23,16 @@ It can be seen that the model's performance gradually improves as it trains.
 
 If you are interested in learning about basic AI model creation with PyTorch, obtaining datasets, training methods, and utilization, please refer <a href="https://github.com/yjg30737/pyqt-torch-cnn-cifar10-gui.git">here</a>!
 
+## Requirements
+* PyQt5 >= 5.14
+* torch
+* torchvision
+* numpy
+
 ## How to Run
 1. git clone ~
-2. python main.py
+2. pip install -r requirements.txt
+3. python main.py
 
 ## Preview
 ![image](https://github.com/yjg30737/pyqt-pytorch-image-classification-gui/assets/55078043/434dbff1-e56d-491b-9fc2-49df07f14f44)
